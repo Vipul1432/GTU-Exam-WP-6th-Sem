@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Prime no</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="number" name="num" />
+        <input type="button" name="btn" value="Calculate" onclick="primeNumber(num.value)" />
+    </form>
+    <script>
+        function primeNumber(n) {
+            array = [];
+            for (var i = 2; array.length < n; i++) {
+                var divisorFound = false;
+                for (var count = 2; count < i; count++) {
+                    if (i % count === 0) {
+                        divisorFound = true;
+                        break;
+                    }
+                }
+                if (divisorFound == false) {
+                    array.push(i);
+                }
+            }
+            for (var j = 0; j < array.length; j++) {
+                document.write("<br>" + array[j]);
+            }
+        }
+    </script>
+</body>
+
+</html>
