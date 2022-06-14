@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No of Element in Form</title>
+</head>
+
+<body>
+    <form action="form" name="form">
+        <input type="text" name="txtbox1">
+        <br>
+        <input type="text" name="txtbox2">
+        <br>
+        <input type="button" value="button1">
+        <input type="button" value="button2">
+        <br> Click the button to get the number of elements in this form
+        <br>
+        <input type="button" value="Get number of elements" onclick="fun()">
+    </form>
+    <script>
+        function fun() {
+            var n = document.form.elements.length;
+            alert("The number of elements in this form are " + n);
+        }
+    </script>
+</body>
+
+</html>
