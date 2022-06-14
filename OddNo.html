@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Odd Numbers</title>
+    <script>
+        function printOddNums() {
+            var num = document.getElementById("num").value;
+            var oddNums = "<br>Odd Numbers are:<br>";
+
+            for (i = 1; i <= num; i++) {
+                if (i % 2 != 0) {
+                    oddNums += i + " ";
+                }
+            }
+            document.getElementById("result").innerHTML = oddNums;
+        }
+    </script>
+</head>
+
+<body>
+    End: <input type="number" id="num" min="1" value="20" />
+    <input type="button" onclick="printOddNums()" value="Calculate" />
+    <div id="result"></div>
+</body>
+
+</html>
