@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat Technological University</title>
+    <style>
+        p {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        var pid = document.getElementById("demo");
+        var fs = 5;
+        var var1 = setInterval(inTimer, 50);
+
+        function inTimer() {
+            pid.innerHTML = "Gujarat Technological University";
+            pid.setAttribute('style', "font-size:" + fs + "px; color:blue");
+            fs = fs + 1;
+            if (fs >= 50) {
+                clearInterval(var1);
+            }
+        }
+    </script>
+</body>
+
+</html>
